@@ -29,10 +29,6 @@ in
     recursive = true;
   }) configs;
 
-  programs.git = {
-    enable = true;
-  };
-
   programs.bash = {
     enable = true;
   };
