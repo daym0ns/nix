@@ -1,20 +1,20 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 1; /* border pixel of windows */
+static const unsigned int borderpx = 3; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const char *fonts[] = {"JetBrainsMono Nerd Font:size=12"};
 static const char *colors[][3] = {
     /*               fg         bg         border   */
-    [SchemeNorm] = {"#bbbbbb", "#1c2321", "#5e6572"},
-    [SchemeSel] = {"#eeeeee", "#7d98a1", "#7d98a1"},
-    [SchemeStatus] = {"#bbbbbb", "#1c2321", "#000000"},
-    [SchemeTagsSel] = {"#eeeeee", "#7d98a1", "#000000"},
-    [SchemeTagsNorm] = {"#bbbbbb", "#1c2321", "#000000"},
-    [SchemeInfoSel] = {"#bbbbbb", "#1c2321", "#000000"},
-    [SchemeInfoNorm] = {"#bbbbbb", "#1c2321", "#000000"},
+    [SchemeNorm] = {"#e0e0e0", "#121212", "#000000"},
+    [SchemeSel] = {"#eeeeee", "#302347", "#302347"},
+    [SchemeStatus] = {"#e0e0e0", "#121212", "#000000"},
+    [SchemeTagsSel] = {"#eeeeee", "#302347", "#000000"},
+    [SchemeTagsNorm] = {"#e0e0e0", "#121212", "#000000"},
+    [SchemeInfoSel] = {"#e0e0e0", "#121212", "#000000"},
+    [SchemeInfoNorm] = {"#e0e0e0", "#121212", "#000000"},
 };
 
 /* tagging */
