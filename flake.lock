@@ -63,11 +63,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1764522182,
-        "narHash": "sha256-zte2AVVlSl4EHfNe1nSidqr7cT9YAfECGjwdT6whw0Y=",
+        "lastModified": 1764523734,
+        "narHash": "sha256-T5qlKwTxH5f6PRFLNKLVOI/IanAEzTBsddeikl7CyFs=",
         "owner": "daym0ns",
         "repo": "sxwm-nixos-overlay",
-        "rev": "af928d220869b49aa0e4af4da8571b9465fe2edf",
+        "rev": "a7230376a855cb125a1a04444117450d68191c7e",
         "type": "github"
       },
       "original": {

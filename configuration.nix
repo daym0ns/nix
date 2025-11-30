@@ -63,8 +63,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    sxwm
-    sxbar
     pavucontrol
     wget
     ungoogled-chromium
@@ -85,6 +83,7 @@
     "nix-command"
     "flakes"
   ];
+
   system.stateVersion = "25.05";
 
 }
