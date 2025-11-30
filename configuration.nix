@@ -10,6 +10,7 @@
     ./hardware-configuration.nix
     ./modules/gaming.nix
     ./modules/automount.nix
+    ./modules/packages.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -61,19 +62,6 @@
       tree
     ];
   };
-
-  environment.systemPackages = with pkgs; [
-    pavucontrol
-    wget
-    ungoogled-chromium
-    alacritty
-    gparted
-    ntfs3g
-    git
-    nix-prefetch-scripts
-    vesktop
-    xclip
-  ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono

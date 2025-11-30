@@ -14,6 +14,7 @@ in
   imports = [
     ./modules/suckless.nix
     ./modules/neovim.nix
+    ./modules/xorg.nix
     ./modules/dev.nix
   ];
 
