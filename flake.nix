@@ -27,6 +27,7 @@
     {
       nixosConfigurations.nixdev = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        pkgs = pkgsOverlay;
         modules = [
           ./configuration.nix
           ./modules/amd.nix
@@ -35,7 +36,7 @@
           {
             home-manager = {
               useUserPackages = true;
-	      useGlobalPkgs = true;
+	            useGlobalPkgs = true;
               users.pizza = import ./home.nix;
               backupFileExtension = "backup";
             };
