@@ -5,6 +5,7 @@ let
   configs = {
     alacritty = "alacritty";
     nvim = "nvim";
+    sxwmrc = "sxwmrc";
   };
 in
 

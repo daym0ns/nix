@@ -21,16 +21,13 @@
         installPhase = ''
           make clean
           make PREFIX=$out install
-          mkdir -p $out/share/xsessions
-
           cat > $out/share/xsessions/sxwm.desktop <<EOF
-          [Desktop Entry]
-          Name=SXWM
-          Comment=Start the SXWM window manager
-          Exec=sxwm
-          TryExec=sxwm
-          Type=XSession
-          EOF
+[Desktop Entry]
+Name=SXWM
+Comment=SXWM Window Manager
+Exec=$out/bin/sxwm
+Type=XSession
+EOF
         '';
 
         buildInputs = [
@@ -43,6 +40,14 @@
           prev.libgcc
           prev.gnumake
         ];
+
+        passthru.providedSessions = [ "sxwm" ];
+
+        meta = with prev.lib; {
+          description = "SXWM window manager";
+          platforms = platforms.linux;
+        };
+
       };
     };
   };

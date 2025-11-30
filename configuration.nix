@@ -34,6 +34,7 @@
     xkb.layout = "pl";
     displayManager = {
       lightdm.enable = true;
+      sessionPackages = [ pkgs.sxwm ];
     };
   };
 
@@ -63,8 +64,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    pavucontrol
     sxwm
+    pavucontrol
     wget
     ungoogled-chromium
     alacritty

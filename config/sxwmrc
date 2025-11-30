@@ -1,0 +1,89 @@
+exec 'xrandr --output DisplayPort-2 --mode 1920x1080 --rate 239.76'
+
+# Colour Themes:
+focused_border_colour    : #000000
+unfocused_border_colour  : #444444
+swap_border_colour       : #eeeeee
+
+# General Options:
+gaps                    : 5
+border_width            : 3
+master_width            : 50
+resize_master_amount    : 2
+resize_stack_amount     : 20
+move_window_amount      : 50
+resize_window_amount    : 50
+snap_distance           : 5
+motion_throttle         : 240 # Set to screen refresh rate for smoothest motions
+should_float            : "pcmanfm", "obs"
+new_win_focus           : true
+warp_cursor             : false
+floating_on_top         : true
+new_win_master          : false
+can_swallow             : "st"
+can_be_swallowed        : "mpv", "sxiv"
+start_fullscreen        : "mpv", "vlc"
+
+# Keybinds:
+mod_key : super
+
+# Application Launchers:
+bind : mod + Return : "alacritty"
+bind : mod + b : "chromium"
+bind : mod + r : "dmenu_run"
+
+# Window Management:
+call : mod + q : close_window
+call : mod + alt + l : quit
+
+
+# Monitor Focus:
+call : mod + comma : focus_prev_mon
+call : mod + period : focus_next_mon
+
+# Move Window Between Monitors:
+call : mod + shift + comma : move_prev_mon
+call : mod + shift + period : move_next_mon
+
+# Keyboard Window Management
+call : mod + j : focus_next
+call : mod + k : focus_prev
+
+call : mod + shift + j : master_prev
+call : mod + shift + k : master_next
+
+call : mod + ctrl + j : master_decrease
+call : mod + ctrl + k : master_increase
+
+# Gaps 
+call : mod + equal : increase_gaps
+call : mod + minus : decrease_gaps
+
+# Layouts
+call : mod + shift + space : toggle_floating
+call : mod + m : toggle_monocle
+call : mod + shift + f : fullscreen
+
+# Reload Config
+call : mod + shift + r : reload_config
+
+# Workspaces (1-9)
+workspace : mod + 1          : move 1
+workspace : mod + 2          : move 2
+workspace : mod + 3          : move 3
+workspace : mod + 4          : move 4
+workspace : mod + 5          : move 5
+workspace : mod + 6          : move 6
+workspace : mod + 7          : move 7
+workspace : mod + 8          : move 8
+workspace : mod + 9          : move 9
+
+workspace : mod + shift + 1  : swap 1
+workspace : mod + shift + 2  : swap 2
+workspace : mod + shift + 3  : swap 3
+workspace : mod + shift + 4  : swap 4
+workspace : mod + shift + 5  : swap 5
+workspace : mod + shift + 6  : swap 6
+workspace : mod + shift + 7  : swap 7
+workspace : mod + shift + 8  : swap 8
+workspace : mod + shift + 9  : swap 9

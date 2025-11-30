@@ -66,12 +66,13 @@ static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {"dmenu_run", NULL};
 static const char *termcmd[] = {"alacritty", NULL};
+static const char *browsercmd[] = {"chromium", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
     {MODKEY, XK_r, spawn, {.v = dmenucmd}},
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
-    {MODKEY, XK_b, togglebar, {0}},
+    {MODKEY, XK_b, spawn, {.v = browsercmd}},
     {MODKEY, XK_j, focusstack, {.i = +1}},
     {MODKEY, XK_k, focusstack, {.i = -1}},
     {MODKEY, XK_i, incnmaster, {.i = +1}},
