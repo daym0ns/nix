@@ -63,14 +63,18 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "path": "./overlays/sxwm-overlay",
-        "type": "path"
+        "lastModified": 1764521985,
+        "narHash": "sha256-y5crItLHqw/XlybINzNhdUS3AuyfH7nuCvoTACXBeOQ=",
+        "owner": "daym0ns",
+        "repo": "sxwm-nixos-overlay",
+        "rev": "d5c9dcabfdc0f2c44804497cd2076b31997772a1",
+        "type": "github"
       },
       "original": {
-        "path": "./overlays/sxwm-overlay",
-        "type": "path"
-      },
-      "parent": []
+        "owner": "daym0ns",
+        "repo": "sxwm-nixos-overlay",
+        "type": "github"
+      }
     }
   },
   "root": "root",

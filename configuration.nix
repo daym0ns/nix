@@ -34,7 +34,6 @@
     xkb.layout = "pl";
     displayManager = {
       lightdm.enable = true;
-      sessionPackages = [ pkgs.sxwm ];
     };
   };
 
@@ -65,6 +64,7 @@
 
   environment.systemPackages = with pkgs; [
     sxwm
+    sxbar
     pavucontrol
     wget
     ungoogled-chromium
@@ -72,6 +72,7 @@
     gparted
     ntfs3g
     git
+    nix-prefetch-scripts
     vesktop
     xclip
   ];

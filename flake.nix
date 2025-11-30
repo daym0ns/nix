@@ -10,7 +10,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    sxwm-overlay.url = "path:./overlays/sxwm-overlay";
+    sxwm-overlay.url = "github:daym0ns/sxwm-nixos-overlay";
 
   };
 
