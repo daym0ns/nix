@@ -10,11 +10,10 @@
         pname = "sxwm";
         version = "1.7";
 
-        src = prev.fetchFromGitHub {
-          owner = "uint23";
-          repo = "sxwm";
+        src = prev.fetchgit {
+          url = "https://github.com/uint23/sxwm.git";
           rev = "v1.7";
-          sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+          sha256 = "sha256-Gytop4lYkQdVaYXWyXmlHotEFnaA0O8CZUmqfIe8X2w=";
           fetchSubmodules = false;
           deepClone = false;
         };
@@ -27,6 +26,7 @@
         buildInputs = [
           prev.xorg.libX11
           prev.xorg.libXinerama
+          prev.xorg.libXcursor
         ];
 
         nativeBuildInputs = [
