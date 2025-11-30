@@ -5,7 +5,6 @@ let
   configs = {
     alacritty = "alacritty";
     nvim = "nvim";
-    sxwmrc = "sxwmrc";
   };
 in
 
@@ -13,7 +12,7 @@ in
 
   imports = [
     ./modules/neovim.nix
-    ./modules/x11-apps.nix
+    ./modules/apps.nix
     ./modules/dev.nix
   ];
 
@@ -23,6 +22,11 @@ in
 
   home.file.".dwm/autostart.sh" = {
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix/src/dwm/autostart/autostart.sh";
+  };
+
+  home.file."wallpapers" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix/config/wallpapers";
+    recursive = true;
   };
 
   xdg.configFile = builtins.mapAttrs (name: subpath: {

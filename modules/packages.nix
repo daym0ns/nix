@@ -4,6 +4,7 @@
     wget
     ntfs3g
     glow
+    feh
     htop
     git
     nix-prefetch-scripts

@@ -38,6 +38,7 @@
     pulse.enable = true;
   };
 
+
   services.xserver = {
     enable = true;
     autoRepeatDelay = 200;
@@ -45,6 +46,9 @@
     xkb.layout = "pl";
     displayManager = {
       lightdm.enable = true;
+      sessionCommands = ''
+        feh --bg-fill ~/wallpapers/ascii-1.png
+      '';
     };
     windowManager = {
       dwm = {
