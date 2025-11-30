@@ -18,9 +18,7 @@
     let
       pkgsOverlay = import nixpkgs {
         system = "x86_64-linux";
-        overlays = [
-          ( import ./overlays/sxwm-overlay.nix )
-        ];
+        overlays = [];
         config = {
             allowUnfree = true;
         };
@@ -29,7 +27,6 @@
     {
       nixosConfigurations.nixdev = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-	      pkgs = pkgsOverlay;
         modules = [
           ./configuration.nix
           ./modules/amd.nix
