@@ -28,23 +28,6 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  services.xserver = {
-    enable = true;
-    autoRepeatDelay = 200;
-    autoRepeatInterval = 35;
-    xkb.layout = "pl";
-    displayManager = {
-      lightdm.enable = true;
-    };
-  };
-
-  services.xserver.windowManager.dwm = {
-    enable = true;
-    package = pkgs.dwm.overrideAttrs {
-      src = ./src/dwm;
-    };
-  };
-
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
