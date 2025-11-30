@@ -13,7 +13,7 @@ in
 
   imports = [
     ./modules/neovim.nix
-    ./modules/xorg.nix
+    ./modules/x11-apps.nix
     ./modules/dev.nix
   ];
 
