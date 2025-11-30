@@ -21,6 +21,16 @@
         installPhase = ''
           make clean
           make PREFIX=$out install
+          mkdir -p $out/share/xsessions
+
+          cat > $out/share/xsessions/sxwm.desktop <<EOF
+          [Desktop Entry]
+          Name=SXWM
+          Comment=Start the SXWM window manager
+          Exec=sxwm
+          TryExec=sxwm
+          Type=XSession
+          EOF
         '';
 
         buildInputs = [
