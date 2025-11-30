@@ -50,7 +50,7 @@
       dwm = {
         enable = true;
         package = pkgs.dwm.overrideAttrs {
-          src = ../src/dwm;
+          src = ./src/dwm;
         };
       };
     };
