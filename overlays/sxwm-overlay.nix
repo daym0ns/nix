@@ -1,4 +1,4 @@
-{ super, self, ... }:
+{ super, ... }:
 {
   sxwm = super.stdenv.mkDerivation {
 
