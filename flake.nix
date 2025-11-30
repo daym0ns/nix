@@ -20,7 +20,7 @@
     let
       pkgsOverlay = import nixpkgs {
         system = "x86_64-linux";
-        overlays = [ ( import self.inputs.sxwm-overlay ) ];
+        overlays = [ self.inputs.sxwm-overlay.nixpkgs.overlays.default ];
         config = {
             allowUnfree = true;
         };
