@@ -18,7 +18,9 @@
     let
       pkgsOverlay = import nixpkgs {
         system = "x86_64-linux";
-        overlays = [];
+        overlays = [
+          ( import ./overlays/sxwm-overlay )
+        ];
         config = {
             allowUnfree = true;
         };
