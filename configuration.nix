@@ -64,7 +64,6 @@
 
   environment.systemPackages = with pkgs; [
     pavucontrol
-    sxwm
     wget
     ungoogled-chromium
     alacritty
