@@ -9,9 +9,9 @@ static const char *fonts[] = {"JetBrainsMono Nerd Font:size=12"};
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {"#e0e0e0", "#121212", "#000000"},
-    [SchemeSel] = {"#eeeeee", "#302347", "#302347"},
+    [SchemeSel] = {"#ffffff", "#302347", "#302347"},
     [SchemeStatus] = {"#e0e0e0", "#121212", "#000000"},
-    [SchemeTagsSel] = {"#eeeeee", "#302347", "#000000"},
+    [SchemeTagsSel] = {"#ffffff", "#302347", "#000000"},
     [SchemeTagsNorm] = {"#e0e0e0", "#121212", "#000000"},
     [SchemeInfoSel] = {"#e0e0e0", "#121212", "#000000"},
     [SchemeInfoNorm] = {"#e0e0e0", "#121212", "#000000"},
