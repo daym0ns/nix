@@ -10,8 +10,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    sxwm-overlay.url = "github:daym0ns/sxwm-nixos-overlay";
-
   };
 
   outputs =
@@ -20,7 +18,7 @@
     let
       pkgsOverlay = import nixpkgs {
         system = "x86_64-linux";
-        overlays = [ self.inputs.sxwm-overlay.nixpkgs.overlays.default ];
+        overlays = [];
         config = {
             allowUnfree = true;
         };
