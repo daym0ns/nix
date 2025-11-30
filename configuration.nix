@@ -47,7 +47,7 @@
     displayManager = {
       lightdm.enable = true;
       sessionCommands = ''
-        feh --bg-fill ~/wallpapers/ascii-1.png
+feh --bg-center ~/wallpapers/ascii-flower.png
       '';
     };
     windowManager = {
