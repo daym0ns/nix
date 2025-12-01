@@ -5,6 +5,10 @@
     fsType = "ext4";
     options = [
       "users" # Allows any user to mount and unmount
+      "uid=1000"
+      "gid=100"
+      "dmask=007"
+      "fmask=117"
       "nofail" # Prevent system from failing if this drive doesn't mount
     ];
   };
